@@ -90,7 +90,7 @@ if uploaded_file is not None:
 
     with col2:
         st.markdown("### 🔍 Image Preview")
-        st.write("This image will be analyzed Àníkẹ́.")
+        st.write("This image will be analyzed by Àníkẹ́.")
         st.write("Click **Predict** below to proceed.")
 
     if st.button("🔍 Predict"):
