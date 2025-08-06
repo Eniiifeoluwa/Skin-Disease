@@ -7,10 +7,6 @@ import os
 import warnings
 warnings.filterwarnings("ignore")
 
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'fastapi_app')))
-
-#from model_utils import predict
-
 
 st.set_page_config(
     page_title="Àníkẹ́ – Skin Disease Classifier", 
@@ -101,7 +97,7 @@ if uploaded_file is not None:
         with st.spinner("Analyzing image..."):
             files = {"file": uploaded_file.getvalue()}
             response = requests.post("https://anike-s571.onrender.com/predict", files=files)
-            #prediction = predict(files['file'])
+           
 
 
         if response.status_code == 200:
