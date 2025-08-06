@@ -54,4 +54,4 @@ The **Àníkẹ́ – Skin Disease Classifier** is an AI-powered tool designed t
 - This tool may provide **probable suggestions**, but accuracy is not guaranteed.
 - **Do not self-medicate or delay treatment** based on the results provided by this application.
 
-By using this tool, you acknowledge that the developers and contributors are **not responsible for any decisions** made based on its output.
+By using this tool, you acknowledge that the developers is **not responsible for any decisions** made based on its output.
