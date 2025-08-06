@@ -4,9 +4,9 @@ from PIL import Image
 from disease_recommendations import disease_recommendations
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'fastapi_app')))
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'fastapi_app')))
 
-from model_utils import predict
+#from model_utils import predict
 
 
 st.set_page_config(
@@ -91,24 +91,24 @@ if uploaded_file is not None:
 
     with col2:
         st.markdown("### 🔍 Image Preview")
-        st.write("This image will be analyzed by our deep learning model.")
+        st.write("This image will be analyzed Àníkẹ́.")
         st.write("Click **Predict** below to proceed.")
 
     if st.button("🔍 Predict"):
         with st.spinner("Analyzing image..."):
             files = {"file": uploaded_file.getvalue()}
-            #response = requests.post("http://localhost:8000/predict", files=files)
-            prediction = predict(files['file'])
+            response = requests.post("http://localhost:8000/predict", files=files)
+            #prediction = predict(files['file'])
 
 
-        #if response.status_code == 200:
-         #   prediction = response.json()["prediction"]
+        if response.status_code == 200:
+            prediction = response.json()["prediction"]
             st.markdown(f"<div class='prediction'>🩺 Prediction: {prediction}</div>", unsafe_allow_html=True)
 
             advice = disease_recommendations.get(prediction, "No specific advice available for this condition.")
             st.markdown(f"<div class='recommendation'>💡 <strong>Recommendation:</strong><br>{advice}</div>", unsafe_allow_html=True)
-        #else:
-         #   st.error("❌ Failed to get prediction from the model API.")
+        else:
+            st.error("❌ Failed to get prediction from the model API.")
 
 
-st.markdown("<div class='footer'>Made with ❤️ by <strong>Akinola Samuel Afolabi</strong> | Imọ̀ràn ní Àníkẹ́</div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'>Made with ❤️ by <strong>Akinola Samuel Afolabi</strong> | Imọ̀ràn ní Àníkẹ́ maa ngba ni</div>", unsafe_allow_html=True)
