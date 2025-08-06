@@ -99,7 +99,7 @@ if uploaded_file is not None:
     if st.button("🔍 Predict"):
         with st.spinner("Analyzing image..."):
             files = {"file": uploaded_file.getvalue()}
-            response = requests.post("https://skin-disease-7s6o.onrender.com", files=files)
+            response = requests.post("https://anike-3hyy.onrender.com", files=files)
             #prediction = predict(files['file'])
 
 
