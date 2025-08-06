@@ -4,6 +4,8 @@ from PIL import Image
 from disease_recommendations import disease_recommendations
 import sys
 import os
+import warnings
+warnings.filterwarnings("ignore")
 #sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'fastapi_app')))
 
 #from model_utils import predict
