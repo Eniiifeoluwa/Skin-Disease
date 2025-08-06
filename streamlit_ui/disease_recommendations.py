@@ -16,7 +16,7 @@ disease_recommendations = {
     "SkinCancer": "Seek immediate medical evaluation. Early detection and treatment are critical. Avoid direct sun exposure and use SPF 30+ sunscreen.",
     "Sun_Sunlight_Damage": "Apply broad-spectrum sunscreen daily, wear protective clothing, and avoid peak sun hours. Hydrate your skin regularly.",
     "Tinea": "Use antifungal creams or powders. Keep the area dry and avoid sharing personal items like towels or razors.",
-    "Unknown_Normal": "No abnormality detected. Maintain good hygiene and monitor your skin regularly for any changes.",
+    "A Normal Picture": "No abnormality detected. Maintain good hygiene and monitor your skin regularly for any changes.",
     "Vascular_Tumors": "Usually benign. Observe for any growth or bleeding and consult a specialist for further evaluation if necessary.",
     "Vasculitis": "Seek immediate medical care. It may indicate an underlying condition. Avoid triggers and follow prescribed treatments.",
     "Vitiligo": "Use sunscreen to protect depigmented skin. Cosmetic cover-ups or light therapy may help. Dermatological consultation is advised.",

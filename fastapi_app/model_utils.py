@@ -9,8 +9,11 @@ with open("fastapi_app/idx_to_class.json") as f:
     idx_to_class = json.load(f)
 
 NUM_CLASSES = len(idx_to_class)
+
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model_path = "fastapi_app/skin_disease_model_state_dict.pth"
+
+
 class CustomModel(nn.Module):
     def __init__(self, base_model):
         super(CustomModel, self).__init__()
