@@ -76,7 +76,7 @@ load_css()
 st.markdown("<h1 style='text-align: center;'>🧬 Àníkẹ́ – Skin Disease Classifier</h1>", unsafe_allow_html=True)
 try:
     banner = Image.open("Anike.png")  
-    st.image(banner, use_column_width=True)
+    st.image(banner, use_container_width=True)
 except:
     st.write("")  
 st.markdown("<p style='text-align: center; font-size: 1.1rem;'>Upload a skin condition image to get a diagnosis and helpful advice.</p>", unsafe_allow_html=True)
