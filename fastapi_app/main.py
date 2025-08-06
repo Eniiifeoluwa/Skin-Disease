@@ -1,13 +1,13 @@
 from fastapi import FastAPI, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi_app.model_utils import predict
+from model_utils import predict
 
 app = FastAPI()
 
-# Enable CORS so Streamlit can call it
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # for local testing
+    allow_origins=["*"],  
     allow_methods=["*"],
     allow_headers=["*"],
 )

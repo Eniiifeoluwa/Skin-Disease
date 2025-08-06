@@ -6,6 +6,11 @@ import sys
 import os
 import warnings
 warnings.filterwarnings("ignore")
+from dotenv import load_dotenv
+
+load_dotenv()
+API_URL = os.getenv("API_URL")
+
 #sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'fastapi_app')))
 
 #from model_utils import predict
@@ -99,7 +104,7 @@ if uploaded_file is not None:
     if st.button("🔍 Predict"):
         with st.spinner("Analyzing image..."):
             files = {"file": uploaded_file.getvalue()}
-            response = requests.post("https://anike-3hyy.onrender.com", files=files)
+            response = requests.post(API_URL, files=files)
             #prediction = predict(files['file'])
 
 
