@@ -5,3 +5,6 @@ torch
 Pillow
 requests
 numpy
+fastapi
+torchvision
+python-multipart
